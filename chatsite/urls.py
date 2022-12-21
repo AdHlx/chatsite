@@ -18,7 +18,7 @@ from django.urls import path
 from chat01 import views
 
 urlpatterns = [
-    path('', views.index),
+    path('', views.index2),
     path('index/', views.index),
 
     path('register/', views.register),
@@ -27,5 +27,4 @@ urlpatterns = [
     path('accounts/login/', views.login),
 
     path('logout/', views.logout),
-
 ]

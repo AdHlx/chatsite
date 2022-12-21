@@ -83,3 +83,7 @@ def logout(request):
         message = {}
         message["success"] = "200"
         return JsonResponse(message, json_dumps_params={'ensure_ascii': False})
+
+
+def index2(request):
+    return render(request, 'wechat/index.html')
